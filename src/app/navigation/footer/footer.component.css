@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  background-color: #fafafa;
+  height: 250px;
+  width: 100%;
+  color: black;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0px;
+}
+.footer-menu {
+  list-style: none;
+}
