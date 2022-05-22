@@ -9,9 +9,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { DonationsComponent } from './donations/donations.component';
 import { EventsComponent } from './events/events.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,14 @@ import { FooterComponent } from './navigation/footer/footer.component';
     DonationsComponent,
     EventsComponent,
     ContactUsComponent,
-    NavigationComponent,
     NavbarComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

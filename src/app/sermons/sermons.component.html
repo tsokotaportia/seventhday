@@ -1,4 +1,4 @@
-<div style="height: 220px; background-color:#fafafa;">
+<div style="height: 120px; background-color:#fafafa;">
   <div class="row">
     <div class="flex-header col-md-12 col-sm-12 col-xsm-12 ">
       <h1 class="text-center mt-4">Sermons</h1>
@@ -7,24 +7,21 @@
 </div>
 <hr>
 <div class="container mt-4">
-  <div class="row">
+  <div class="row ">
     <div class="card-group">
-      <div class="card top-card">
-        <img src="images/thays-orrico--YRfFm9IX_E-unsplash.jpg" class="card-img-top mycard" alt="...">
+      <div *ngFor="image of images" class="card top-card">
+        <img src="assets/images/thays-orrico--YRfFm9IX_E-unsplash.jpg" class="card-img-top mycard" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text show" style="display: none;">This is a wider card with supporting text below as a
-            natural
-            lead-in to additional
-            content. This content is a little bit longer.</p>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           <div class="container d-flex justify-content-center"><button
-              class="btn btn-success btn-medium rounded-pill hide">Read
+              class="btn btn-success btn-large rounded-pill hide">Read
               more</button></div>
 
         </div>
       </div>
-      <div class="card">
-        <img src="images/evangelism.jpg" class="card-img-top" alt="...">
+      <!-- <div class="card">
+        <img src="assets/images/evangelism.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -35,7 +32,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="images/erika-giraud-7KhbREQPFD4-unsplash.jpg" class="card-img-top" alt="...">
+        <img src="assets/images/erika-giraud-7KhbREQPFD4-unsplash.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -45,6 +42,6 @@
               more</button></div>
 
         </div>
-      </div>
+      </div> -->
     </div>
   </div>

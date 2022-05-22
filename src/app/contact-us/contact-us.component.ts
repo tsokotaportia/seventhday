@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
-
+  title = "Contact-Us";
+  email = "mandaraseventhdayadventist@gmail.com"
+  churchTitle = "Seventhday Adventist"
   constructor() { }
 
   ngOnInit(): void {
