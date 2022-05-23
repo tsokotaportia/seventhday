@@ -1,13 +1,10 @@
 footer {
   text-align: center;
-  background-color: #243D25;
-  height: 250px;
+  background-color: #019267;
   width: 100%;
   color: black;
   padding-top: 20px;
   position: fixed;
   bottom: 0px;
 }
-.footer-menu {
-  list-style: none;
-}
+

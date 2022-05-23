@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faAdd } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-donations',
@@ -6,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./donations.component.css']
 })
 export class DonationsComponent implements OnInit {
+  faAdd = faAdd;
   title = "Joshua needs a new Heart";
-  src = "hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
+  donations=[
+    {
+      imgUrl: "hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
+    },
+    {
+      imgUrl : "donations.jpg"
+    },
+    {
+      imgUrl : "donations1.jpg"
+    }
+  ]
+
 
   constructor() { }
 

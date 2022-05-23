@@ -1,4 +1,4 @@
-<div style="height: 120px; background-color:#fafafa;">
+<div style="height: 80px; background-color:#fafafa;">
   <div class="row">
     <div class="col-md-12 col-sm-12 col-xsm-12 text-center">
       <h1 class="text-center mt-4">{{title}}</h1>
@@ -8,59 +8,29 @@
 <hr>
 <div class="container">
   <div class="row mt-4">
-    <div *ngFor="gallery of gallery" class="col-lg-4 col-md-6 col-sm-12 mt-4">
-      <div class="card">
-        <img class="card-img-top img-fluid" [src]="gallery[0].imgUrl" style="height:200px; width:348px;"
+    <div *ngFor="let gallery of galleries" class="col-lg-4 col-md-6 col-sm-12 mt-4">
+      <div class="card shadow">
+        <img class="card-img-top img-fluid" [src]="gallery.imgUrl" style="height:200px; width:410px;"
           alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">{{gallery[0].cardTitle}}</h5>
-          <p class="card-text">{{gallery[0].description }}</p>
+          <h5 class="card-title">{{gallery.cardTitle}}</h5>
+          <p class="card-text">{{gallery.description }}</p>
           <div class="d-flex justify-content-around">
-            <button class="btn btn-success btn-md">View</button>
-            <button class="btn btn-warning btn-md">Edit</button>
-            <button class="btn btn-danger btn-md">Delete</button>
+            <button class="btn btn-success btn-lg rounded-pill">
+              <fa-icon [icon]="faEye" class="me-2"></fa-icon>
+              <span>View</span>
+            </button>
+            <button class="btn btn-warning btn-lg rounded-pill">
+              <fa-icon [icon]="faPencil" class="me-2"></fa-icon>
+              <span>Edit</span>
+            </button>
+            <button class="btn btn-danger btn-lg rounded-pill">
+              <fa-icon [icon]="faCancel" class="me-2"></fa-icon>
+              <span>Delete</span>
+            </button>
           </div>
-
         </div>
       </div>
     </div>
-
-
   </div>
-  <!-- <div class="row mt-4">
-    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-      <div class="card">
-        <img class="card-img-top" src="assets/images/dawn-mcdonald-v77i2MaGSLw-unsplash.jpg"
-          style="height:200px; width:348px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This conhow to install scss and less on visual studio</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-      <div class="card">
-        <img class="card-img-top" src="assets/images/toronto.jpeg" style="height:200px; width:348px;"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This conhow to install scss and less on visual studio</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-      <div class="card">
-        <img class="card-img-top" src="assets/images/adventurer.jpg" style="height:200px; width:348px;"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content.how to install scss and less on visual studio
-        </div>
-      </div>
-    </div>
-
-  </div> -->
 </div>

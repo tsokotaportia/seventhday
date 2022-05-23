@@ -1,13 +1,13 @@
 <div style="height: 120px; background-color:#fafafa;">
   <div class="row">
     <div class="col-md-12 col-sm-12 col-xsm-12 text-center">
-      <h1 class="text-center mt-4">{{title}}</h1>
+      <h1 class="text-center mt-4 animated-fadeIn-infinite">{{title}}</h1>
     </div>
   </div>
 </div>
 <div class="container">
   <hr>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-6 mt-4">
       <h3>{{churchTitle}}</h3>
       <address>
@@ -44,12 +44,15 @@
           <div class="form-check d-flex justify-content-center mb-4 mt-4">
             <input class="form-check-input me-2 mt-4" type="checkbox" value="" id="form4Example4" checked />
             <label class="form-check-label" for="form4Example4">
-              Send me a copy of this message
+              <span>Send me a copy of this message</span>
             </label>
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4" onSubmit="checkAddress('email');">Send</button>
+          <button type="submit" class="btn btn-primary btn-block mb-4" onSubmit="checkAddress('email');">
+            <fa-icon [icon]="faEnvelope" class="me-2"></fa-icon>
+            <span>Send</span>
+          </button>
         </form>
       </div>
     </div>

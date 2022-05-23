@@ -1,83 +1,46 @@
-<div style="height: 120px; background-color:#fafafa;">
+<div style="height: 80px; background-color:#fafafa;">
   <div class="row">
     <div class="col-md-12 col-sm-12 col-xsm-12 text-center">
-      <h1 class="mt-4 p-4">{{title}}</h1>
+      <h1 class="mt-4">{{title}}</h1>
     </div>
   </div>
 </div>
 <hr>
 <div class="container">
-  <img src="assets/images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg" style="height: 570px; width: 1110px;" alt="">
-  <p><span class="text-muted">Cause by Jean Ken</span><span class="text-muted">March 26,2019</span><span
-      class="text-muted">Tags:Fundraising
-      .ngo</span><span class="text-muted">Posted in: Causes</span>
-  </p>
-  <hr>
-  <p class="text-muted mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nam incidunt, deserunt
-    culpa quo cum est
-    voluptatem illo ut tempora.</p>
-</div>
-<div class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-6">
-        <span class="amount text-warning">62.60%</span><br>
-        Raised
-      </div>
-      <div class="col-6">
-        <span class="text-warning">$30.0000</span><br>
-        donated of
-        <span class="amount">$50.000</span>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-6">
-        <span class="Donors count text-warning">2</span>
-        Donors
-      </div>
-      <div class="col-6">
-        <span>Campain has ended</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container mb-4">
-  <h5 class="font-weight-bold">Leave a comment</h5>
-  <form>
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-            placeholder="Your comment"></textarea>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <div class="form-group">
-          <label for="exampleInputName"></label>
-          <input type="password" class="form-control" id="exampleInputName" placeholder="Your Name">
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <label for="exampleInputEmail1"></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Your email">
-        </div>
-      </div>
+  <img src="donation.imgUrl" style="min-height: 250px; width: 1110px; " alt="">
+  <div class=" mb-4 mt-4">
+    <h5 class="font-weight-bold">Leave a comment</h5>
+    <div class="col-md-6">
+      <div class="card-body shadow">
+        <form>
+          <!-- Name input -->
+          <div class="form-outline mt-4 ">
+            <input type="text" placeholder="Name" id="form4Example1" class="form-control"
+              onmouseleave="alert('Enter your username here');" />
+            <label class="form-label" for="form4Example1"></label>
+          </div>
 
-      <div class="col-4">
-        <div class="form-group">
-          <label for="exampleInputWebsite"></label>
-          <input type="website" class="form-control" id="exampleInputWebsite " placeholder="Your website">
-        </div>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" placeholder="Email address" id="form4Example2" class="form-control" />
+            <label class="form-label" for="form4Example2"></label>
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control" placeholder="Comment" id="form4Example3" rows="4"></textarea>
+            <label class="form-label" for="form4Example3"></label>
+          </div>
+          <!-- Submit button -->
+          <div class="container mt-4">
+            <button type="submit" class="btn btn-warning rounded-pill btn-medium text-center">
+              <fa-icon [icon]="faAdd" class="me-2"></fa-icon>
+              <span>Add comment</span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="container">
-      <button type="submit" class="btn btn-warning rounded-pill btn-medium text-center">Add comment</button>
-    </div>
-  </form>
+
+  </div>
 </div>
