@@ -12,6 +12,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

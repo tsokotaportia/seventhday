@@ -12,7 +12,7 @@ export class GalleryComponent implements OnInit {
   faEye = faEye;
   faPencil = faPencil;
   faCancel = faCancel;
-  title = "Gallery"
+  imgUrl = "assets/images/tshirt.jpg";
   galleries = [
     {
       description :"This card has supporting text below as a natural lead-in to additional content.",
