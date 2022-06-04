@@ -1,13 +1,33 @@
-<div class="card bg-dark text-white shadow-lg mt-4">
-  <img src="assets/images/evangelism.jpg" class="card-img img-fluid" alt="..." style="height: 500px; border-radius: 20px;">
-  <div class="card-img-overlay text-center" >
-    <h1 class="fs-1 text-warning" style="line-height: 500px;">WELCOME LETS WORSHIP TOGETHER</h1>
-  </div>
-</div>
+
+<!--Start of Carousel-->
+<carousel [pauseOnFocus]="true">
+  <slide>
+    <img src="assets/images/evangelism.jpg" alt="First slide" style="display: block; height: 400px; object-fit: cover; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/images/choir.jpeg" alt="Second slide" style="display: block; height: 400px; object-fit: cover; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/images/pastor.jpg" alt="Third slide" style="display: block; height: 400px; object-fit: cover; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </slide>
+</carousel>
+<!-- End of Carousel -->
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-4">
-      <div class="card shadow-lg" style="width: 20rem; border-radius: 20px;">
+      <div class="card shadow-lg mx-auto" style="width: 20rem; border-radius: 20px;">
         <img src="assets/images/adventurer.jpg" class="card-img-top" alt="..." style="height: 220px;">
         <div class="card-body">
           <p class="card-text fs-5 text-center">Adventurer</p>
@@ -15,7 +35,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card shadow-lg" style="width: 20rem; border-radius: 20px;">
+      <div class="card shadow-lg mx-auto" style="width: 20rem; border-radius: 20px;">
         <img src="assets/images/youth.jpg" class="card-img-top" alt="..." style="height: 220px;">
         <div class="card-body">
           <p class="card-text  fs-5 text-center">Pathfinder</p>
@@ -23,7 +43,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card shadow-lg" style="width: 20rem; border-radius: 20px;">
+      <div class="card shadow-lg mx-auto" style="width: 20rem; border-radius: 20px;">
         <img src="assets/images/dorcas.jpg" class="card-img-top" alt="..." style="height: 220px;">
         <div class="card-body">
           <p class="card-text fs-5 text-center">Dorcas</p>
